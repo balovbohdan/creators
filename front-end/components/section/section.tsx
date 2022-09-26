@@ -16,10 +16,10 @@ const Section = ({
   Tag = 'div',
   heading = ''
 }: SectionProps) => {
-  const classList = classNames('space-y-x-small', className);
+  const rootClassList = classNames('space-y-x-small', className);
 
   return (
-    <Tag className={classList}>
+    <Tag className={rootClassList}>
       {heading && <Heading>{heading}</Heading>}
       {children}
     </Tag>
